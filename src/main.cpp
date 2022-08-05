@@ -83,7 +83,7 @@ void Hangman::DisplayHangman() {
       cout << "\n\t       |";
       cout << "\n\t========";
    }
-   else if(Lifes==7) {
+   else if(Lifes==6) {
       cout << "\n\t   +---+";
       cout << "\n\t   |   |";
       cout << "\n\t   o   |";
@@ -114,13 +114,15 @@ void Hangman::StartGame() {
          case '1':
             WordKey = Words[rand()%9];
             Word = ConvertString(WordKey);
-            while (GameOver==false) {
-               if (Lifes>=8) {
+            GameOver = false;
+            while (!GameOver) {
+               if (Lifes>=7) {
                   GameOver = true;
                   break;
                }
                system("cls");
                DisplayHangman();
+               cout << "\n\tWordKey: " << WordKey << "\n";
                cout << "\n\tWord: " << Word << "\n";
                cout << "\n\tInput Alphabet: ";
                Answer = _getch();
@@ -142,9 +144,8 @@ bool Hangman::AddAlphabet(char Alpha) {
    bool Tester = false;
    for (int i = 0; i < Word.length(); i++) {
       if (WordKey[i] == Alpha) {
-         Word[i] == WordKey[i];
+         this->Word[i] == this->WordKey[i];
          Tester = true;
-         cout << "giggly\n\n";
       }
    }
    return Tester;
