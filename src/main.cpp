@@ -13,6 +13,7 @@ class Hangman {
    Hangman();
    void DisplayHangman();
    string ConvertString(string str);
+   bool AddAlphabet(char Alpha);
    void StartGame();
 };
 string Hangman::ConvertString(string str) {
@@ -95,10 +96,12 @@ void Hangman::DisplayHangman() {
 }
 Hangman::Hangman() {
    GameOver = false;
-   Lifes = -1;
+   Lifes = 0;
 }
 void Hangman::StartGame() {
    char Option = '\0';
+   char Answer = '\0';
+   bool Checker = false;
    while (true) {
       system("cls");
       cout << "\n\tHANGMAN\n\n";
@@ -109,6 +112,23 @@ void Hangman::StartGame() {
       cout << "\n";
       switch(Option) {
          case '1':
+            WordKey = Words[rand()%9];
+            Word = ConvertString(WordKey);
+            while (GameOver==false) {
+               if (Lifes>=8) {
+                  GameOver = true;
+                  break;
+               }
+               system("cls");
+               DisplayHangman();
+               cout << "\n\tWord: " << Word << "\n";
+               cout << "\n\tInput Alphabet: ";
+               Answer = _getch();
+               Checker = AddAlphabet(Answer);
+               if (!Checker) {
+                  this->Lifes+=1;
+               }
+            }
             break;
          case '2':
             exit(-1);
@@ -117,6 +137,17 @@ void Hangman::StartGame() {
             break;
       }
    }
+}
+bool Hangman::AddAlphabet(char Alpha) {
+   bool Tester = false;
+   for (int i = 0; i < Word.length(); i++) {
+      if (WordKey[i] == Alpha) {
+         Word[i] == WordKey[i];
+         Tester = true;
+         cout << "giggly\n\n";
+      }
+   }
+   return Tester;
 }
 
 
