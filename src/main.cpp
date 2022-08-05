@@ -15,6 +15,7 @@ class Hangman {
    string ConvertString(string str);
    bool AddAlphabet(char Alpha);
    void StartGame();
+   bool IfWin();
 };
 string Hangman::ConvertString(string str) {
       string con = str;
@@ -115,9 +116,20 @@ void Hangman::StartGame() {
             WordKey = Words[rand()%9];
             Word = ConvertString(WordKey);
             GameOver = false;
+            Lifes = 0;
             while (!GameOver) {
                if (Lifes>=7) {
+                  system("cls");
                   GameOver = true;
+                  cout << "\n\tGAME OVER\n\n\t";
+                  system("pause");
+                  break;
+               }
+               if (IfWin()) {
+                  system("cls");
+                  GameOver;
+                  cout << "\n\tYOU WIN\n\n\t";
+                  system("pause");
                   break;
                }
                system("cls");
@@ -150,7 +162,14 @@ bool Hangman::AddAlphabet(char Alpha) {
    }
    return Tester;
 }
-
+bool Hangman::IfWin() {
+   for (int i = 0; i<Word.length(); i++) {
+      if (Word[i]=='_') {
+         return false;
+      }
+   }
+   return true;
+}
 
 
 
