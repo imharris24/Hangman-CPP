@@ -154,10 +154,10 @@ void Hangman::StartGame() {
 }
 bool Hangman::AddAlphabet(char Alpha) {
    bool Tester = false;
-   for (int i = 0; i < Word.length(); i++) {
-      if (WordKey[i] == Alpha) {
-         this->Word[i] == this->WordKey[i];
+   for (int i=0; i<WordKey.length(); i++) {
+      if (Alpha == WordKey[i]) {
          Tester = true;
+         Word[i] = WordKey[i];
       }
    }
    return Tester;
