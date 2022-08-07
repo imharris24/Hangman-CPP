@@ -1,1 +1,23 @@
-# Hangman-CPP
+# Hangman C++
+
+Hangman is a guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses. Originally a Paper-and-pencil game, there are now electronic versions.
+
+NOTE: Words in this game can be changed by editing source code
+
+## How to Play:
+
+ - Enter any key to insert input
+ - If you guess the word without killing Hangman, You Win
+ - If you fail to do so, You Lose
+
+## Author
+
+- [Github -> @imharris24](https://www.github.com/imharris24)
+- [Insta  -> @imharrisg](https://www.instagram.com/im_harrisg/)
+
+  
+## Support
+
+For support, email harris20014@gmail.com.
+
+  
