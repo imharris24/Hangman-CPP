@@ -10,11 +10,6 @@ NOTE: Words in this game can be changed by editing source code
  - If you guess the word without killing Hangman, You Win
  - If you fail to do so, You Lose
 
-## Author
-
-- [Github -> @imharris24](https://www.github.com/imharris24)
-- [Insta  -> @imharrisg](https://www.instagram.com/im_harrisg/)
-
   ## Screenshots
 
 ![App Screenshot](https://raw.githubusercontent.com/imharris24/Hangman-CPP/main/screenshot/scr01.png?token=GHSAT0AAAAAABZQSA2C5SXNETHS7VAJ2O2CY3J5O6A)
@@ -22,6 +17,12 @@ NOTE: Words in this game can be changed by editing source code
 ![App Screenshot](https://raw.githubusercontent.com/imharris24/Hangman-CPP/main/screenshot/scr02.png?token=GHSAT0AAAAAABZQSA2DTAZJ6GSS4HT3MI6CY3J5PAA)
 
 ![App Screenshot](https://raw.githubusercontent.com/imharris24/Hangman-CPP/main/screenshot/scr03.png?token=GHSAT0AAAAAABZQSA2C5SXNETHS7VAJ2O2CY3J5O6A)
+
+## Author
+
+- [Github -> @imharris24](https://www.github.com/imharris24)
+- [Insta  -> @imharrisg](https://www.instagram.com/im_harrisg/)
+
 
 ## Support
 
