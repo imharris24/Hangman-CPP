@@ -18,6 +18,18 @@ NOTE: Words in this game can be changed by editing source code
 
 ![App Screenshot](https://raw.githubusercontent.com/imharris24/Hangman-CPP/main/screenshot/scr03.png?token=GHSAT0AAAAAABZQSA2C5SXNETHS7VAJ2O2CY3J5O6A)
 
+
+## Related
+
+Here are some related projects,
+
+[TicTacToe](https://github.com/imharris24/TicTacToe-CPP)
+
+[Snake](https://github.com/imharris24/Snake-CPP)
+
+[Binary Calculator](https://github.com/imharris24/BinaryCalculator-CPP)
+
+
 ## Author
 
 - [Github -> @imharris24](https://www.github.com/imharris24)
