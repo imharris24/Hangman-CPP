@@ -27,7 +27,7 @@ Here are some related projects,
 
 [Snake](https://github.com/imharris24/Snake-CPP)
 
-[Binary Calculator](https://github.com/imharris24/BinaryCalculator-CPP)
+[Binary Calculator](https://github.com/imharris24/Binary-Calculator-CPP)
 
 
 ## Author
